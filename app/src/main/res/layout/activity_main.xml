@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/albumArt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/albumArt"
+            android:src="@drawable/album_cover" />
+
+        <LinearLayout
+            android:id="@+id/timeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:id="@+id/startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/startTime" />
+
+            <SeekBar
+                android:id="@+id/timeSeek"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/endTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/endTime" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/playPrevious"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?selectableItemBackground"
+                android:scaleX="2.5"
+                android:scaleY="2.5
+"           android:src="@drawable/ic_baseline_skip_previous_24"
+                android:layout_margin="30dp"/>
+
+            <ImageButton
+                android:id="@+id/playCurrent"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleX="2.5"
+                android:scaleY="2.5"
+                android:src="@drawable/ic_baseline_play_arrow_24"
+                android:layout_margin="30dp"/>
+
+            <ImageButton
+                android:id="@+id/playNext"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?selectableItemBackground"
+                android:scaleX="2.5"
+                android:scaleY="2.5"
+                android:src="@drawable/ic_baseline_skip_next_24"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
+
